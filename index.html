@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heng | Web Developer Profile</title>
+
+  <style>
+    /* =========================================================
+       1. Base Page Styles
+       ========================================================= */
+    body {
+      /* Clean, modern, standard system fonts */
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+      background-color: #f0f2f5; /* Light grey solid background */
+      margin: 0;
+      padding: 40px 20px;
+
+      /* Centers the card both vertically and horizontally */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    /* =========================================================
+       2. Profile Card Container
+       ========================================================= */
+    .profile-card {
+      background-color: #ffffff; /* Solid white card background */
+      width: 100%;
+      max-width: 440px;
+      padding: 32px 28px;
+      border-radius: 14px; /* Smooth rounded corners */
+      border: 1px solid #e1e4e8; /* Subtle border for definition */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft drop shadow */
+      text-align: center;
+    }
+
+    /* =========================================================
+       3. Profile Image
+       ========================================================= */
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%; /* Makes the square image a perfect circle */
+      object-fit: cover;
+      border: 4px solid #2563eb; /* Solid blue accent border */
+      margin-bottom: 16px;
+    }
+
+    /* =========================================================
+       4. Typography & Headings
+       ========================================================= */
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: 26px;
+      color: #1e293b;
+    }
+
+    .role-badge {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: bold;
+      color: #2563eb;
+      background-color: #eff6ff;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .bio {
+      font-size: 15px;
+      color: #555555;
+      margin-bottom: 24px;
+    }
+
+    /* Styling for the <mark> highlight element */
+    mark {
+      background-color: #fef08a; /* Soft yellow highlight */
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: #1e293b;
+      margin: 24px 0 12px 0;
+      text-align: left;
+    }
+
+    /* =========================================================
+       5. Hobbies / Interests List
+       ========================================================= */
+    .hobbies-list {
+      list-style-type: none; /* Remove default bullet points */
+      padding: 0;
+      margin: 0 0 24px 0;
+      text-align: left;
+    }
+
+    .hobbies-list li {
+      background-color: #f8fafc;
+      padding: 10px 14px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      font-size: 14px;
+    }
+
+    /* =========================================================
+       6. Social & Contact Links
+       ========================================================= */
+    .links-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 16px;
+      margin-bottom: 20px;
+    }
+
+    .btn-link {
+      flex: 1;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #2563eb; /* Solid primary blue */
+      padding: 10px 0;
+      border-radius: 8px;
+      text-align: center;
+      transition: background-color 0.2s ease;
+    }
+
+    /* Hover effect for buttons */
+    .btn-link:hover {
+      background-color: #1d4ed8; /* Slightly darker blue on hover */
+    }
+
+    /* Footer disclaimer text */
+    .card-footer {
+      border-top: 1px solid #f1f5f9;
+      padding-top: 16px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Profile Card Container -->
+  <main class="profile-card">
+
+    <!-- Header Section: Avatar, Name, and Role -->
+    <header>
+      <!-- Profile picture with descriptive alt text -->
+      <img 
+        src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=250&q=80" 
+        alt="Headshot photo of Heng, smiling" 
+        class="avatar"
+      >
+      <h1>Heng</h1>
+      <span class="role-badge">Web Developer</span>
+    </header>
+
+    <!-- Bio Section: Demonstrating <strong>, <em>, and <mark> -->
+    <section>
+      <p class="bio">
+        Hi there! I am an <em>aspiring web developer</em> dedicated to learning <strong>HTML and CSS</strong>.
+        I love solving problems with code and turning creative ideas into <mark>clean, responsive websites</mark>.
+      </p>
+    </section>
+
+    <!-- Interests Section: Demonstrating an unordered list (<ul>) -->
+    <section>
+      <h2>My Hobbies</h2>
+      <ul class="hobbies-list">
+        <li>💻 <strong>Coding</strong> - Building small web experiments</li>
+        <li>🎧 <strong>Listening to music</strong> - Lo-fi beats while working</li>
+        <li>☕ <strong>Coffee</strong> - Brewing fresh cups every morning</li>
+        <li>🎮 <strong>Mobile games</strong> - Relaxing and strategy games</li>
+      </ul>
+    </section>
+
+    <!-- Links Section: Opening external links safely in a new tab -->
+    <section>
+      <h2>Connect with Me</h2>
+      <div class="links-container">
+        <!-- target="_blank" opens in a new tab; rel="noopener noreferrer" ensures security -->
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-link">GitHub</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-link">YouTube</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-link">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- Footer Section: Demonstrating <small> -->
+    <footer class="card-footer">
+      <small>© 2026 Heng. Built with semantic HTML &amp; pure CSS.</small>
+    </footer>
+
+  </main>
+
+</body>
+</html>
